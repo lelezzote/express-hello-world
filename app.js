@@ -36,7 +36,7 @@ app.get('/pokemons', (req, res) => {
     res.send(pokemons);
 });
 
-app.get('/series', (req, res) => {
+app.post('/series', (req, res) => {
     const seriesFavoritas = [
         { name: "Alice in Bordeland" },
         { name: "Stranger Things" },
