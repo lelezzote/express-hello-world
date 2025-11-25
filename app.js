@@ -20,6 +20,22 @@ app.get('/tico', (req, res) => {
     res.send('teco');
 });
 
+app.get('/pokemons', (req, res) => {
+  const pokemons = [
+    { id: 1, name: "Pikachu" },
+    { id: 2, name: "Butterfree" },
+    { id: 3, name: "Pidgeotto" },
+    { id: 4, name: "Charmander" },
+    { id: 5, name: "Squirtle" },
+    { id: 6, name: "Bulbasaur" },
+    { id: 7, name: "Metapod" },
+    { id: 8, name: "Kingler" },
+    { id: 9, name: "Primeape" },
+    { id: 10, name: "Muk" }
+  ]
+    res.send(pokemons);
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
